@@ -13,7 +13,7 @@
       <div class="top-header">
             <div class="container">
                   <div class="row">
-                        <div class="col-md-12">Hello WordPress</div>
+                        <div class="col-md-12"><p><?php echo get_theme_mod('mir_header_title'); ?></p></div>
                   </div>
             </div>
       </div>
@@ -22,7 +22,7 @@
                   <div class="row">
                        <?php if ( get_theme_mod('mir_logo') ) : ?>
 
-                        <div class="col-md-3"><a href="<?php echo home_url(); ?>"><img src="<?php echo esc_url( get_theme_mod('mir_header_logo') ); ?>" alt="logo"></a></div>
+                        <div class="col-md-3"><a href="<?php echo home_url(); ?>"><img src="<?php echo esc_url( get_theme_mod('mir_logo') ); ?>" alt="logo"></a></div>
                               <?php endif; ?>
                        
                         <div class="col-md-9">

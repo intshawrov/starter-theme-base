@@ -55,6 +55,20 @@ $wp_customize->add_control(
       ]
       )
 );
+// Header Title
+$wp_customize->add_setting( 'mir_header_title', [
+      'default'           => 'Hello WrodPress',
+] );
+
+$wp_customize->add_control(
+    'mir_header_title',
+    [
+        'label'   => __( 'Header Title', 'learning26' ),
+        'section' => 'mir_header_area',
+        'type'    => 'text',
+    ]
+);
+
 }
 
 
