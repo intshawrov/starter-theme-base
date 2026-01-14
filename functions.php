@@ -49,5 +49,21 @@ $wp_customize->add_control(
       )
 );
 }
+// Blog Section Heading
+  $wp_customize->add_section('blog_settings', array(
+        'title' => __('Blog Section', 'lessonlms'),
+        'priority' => 110,
+    ));
+    // Blog Heading Setting
+
+    $wp_customize->add_setting('blog_heading', array(
+        'default' => 'Our Blog',
+    ));
+    $wp_customize->add_control('blog_heading_control', array(
+        'label' => __('Blog Section Title', 'lessonlms'),
+        'section' => 'blog_settings',
+        'settings' => 'blog_heading',
+        'type' => 'text',
+    ) );
 
 add_action("customize_register", "mir_customize_register");
