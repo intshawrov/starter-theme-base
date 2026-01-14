@@ -20,17 +20,15 @@
       <div class="header-area">
             <div class="container">
                   <div class="row">
-                        <div class="col-md-3">Logo.</div>
+                        <div class="col-md-3"><h1>Logo.</h1></div>
                         <div class="col-md-9">
-                              <div class="nav">
-                                    <ul>
-                                          <li><a href="">Home</a></li>
-                                          <li><a href="">Blog</a></li>
-                                          <li><a href="">Service</a></li>
-                                          <li><a href="">Portfolio</a></li>
-                                          <li><a href="">Contact</a></li>
-                                    </ul>
-                              </div>
+                              <ul id="nav">
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Service</a></li>
+                                    <li><a href="">Portfolio</a></li>
+                                    <li><a href="">Contact</a></li>
+                              </ul>
                         </div>
                   </div>
             </div>

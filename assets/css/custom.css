@@ -2,6 +2,11 @@
       --primary-color:#f4a261;
       --secondary-color:#aec3b0;
       --text-color:#264653;
+      --white-color:#ffffff;
+
+      --font-text:16px;
+      --font-title:45px;
+      --font-sub-title:25px;
 }
 
 *, *::before, *::after{
@@ -14,7 +19,28 @@
 #header .top-header{
       background: var(--primary-color);
       text-align: center;
-      padding: 10px 20px;
-      margin-bottom: 20px;
+      padding: 10px 0;
 }
 
+#header .header-area{
+      
+      background: var(--secondary-color);
+}
+
+#header .header-area ul#nav{
+      text-align: right;
+      margin-top: 10px;
+}
+
+#header .header-area ul#nav li{
+      display: inline-block;
+      font-weight: bold;
+      margin-left: 10px;
+}      
+
+#header .header-area ul#nav li a{
+      text-decoration: none;
+      font-size: var(--font-text);
+      color: var(--white-color);
+
+}
