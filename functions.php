@@ -17,10 +17,17 @@ add_action("wp_enqueue_scripts", "mir_enqueue_scripts");
 function mir_theme_support(){
       add_theme_support('title-tag');
       add_theme_support('post-thumbnails');
+
+      add_theme_support("menus"); 
+
+      register_nav_menus([
+            'main-menu' => __( 'Primary Menu', 'learning26' ),
+      ] );
 }
 
-
 add_action('after_setup_theme', 'mir_theme_support'); 
+
+
 
 function mir_customize_register($wp_customize){
 
@@ -49,21 +56,6 @@ $wp_customize->add_control(
       )
 );
 }
-// Blog Section Heading
-  $wp_customize->add_section('blog_settings', array(
-        'title' => __('Blog Section', 'lessonlms'),
-        'priority' => 110,
-    ));
-    // Blog Heading Setting
 
-    $wp_customize->add_setting('blog_heading', array(
-        'default' => 'Our Blog',
-    ));
-    $wp_customize->add_control('blog_heading_control', array(
-        'label' => __('Blog Section Title', 'lessonlms'),
-        'section' => 'blog_settings',
-        'settings' => 'blog_heading',
-        'type' => 'text',
-    ) );
 
 add_action("customize_register", "mir_customize_register");
