@@ -21,3 +21,33 @@ function mir_theme_support(){
 
 
 add_action('after_setup_theme', 'mir_theme_support'); 
+
+function mir_customize_register($wp_customize){
+
+//Header Area Customize
+$wp_customize->add_section( 'mir_header_area', [
+      'title'    => __( 'Header Area', 'learning26' ),
+      'priority' => 30,
+] );
+
+// Setting
+$wp_customize->add_setting( 'mir_logo', [
+      'default'           => '',
+      'sanitize_callback' => 'esc_url_raw',
+] );
+
+  // Control (Image Upload)
+$wp_customize->add_control(
+      new WP_Customize_Image_Control(
+      $wp_customize,
+      'mir_logo',
+      [
+            'label'    => __( 'Upload Logo', 'learning26' ),
+            'section'  => 'mir_header_area',
+            'settings' => 'mir_logo',
+      ]
+      )
+);
+}
+
+add_action("customize_register", "mir_customize_register");
