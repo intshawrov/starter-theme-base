@@ -19,7 +19,7 @@
 #header .top-header{
       background: var(--primary-color);
       text-align: center;
-      padding: 10px 0;
+      padding: 10px 20px;
 }
 
 #header .header-area{
@@ -29,7 +29,8 @@
 
 #header .header-area ul#nav{
       text-align: right;
-      margin-top: 10px;
+      padding: 20px 20px;
+      margin: auto;
 }
 
 #header .header-area img{
@@ -48,4 +49,8 @@
       font-size: var(--font-text);
       color: var(--white-color);
 
+}
+
+.col-md-3 {
+    margin: auto;
 }
