@@ -8,6 +8,7 @@ function mir_enqueue_scripts(){
 
 
       wp_enqueue_script("bootstrap-js", get_template_directory_uri() ."/assets/bootstrap.min.js" ,[], " 5.0.2 ", "true");
+      wp_enqueue_script("custom-js", get_template_directory_uri() . "/assets/custom.js" , [], "1.0.0", "true");
 
 }
 
