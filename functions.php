@@ -84,6 +84,18 @@ $wp_customize->add_control(
     ]
 );
 
+// Footer Area Customize
+$wp_customize->add_section( 'mir_footer_area', [
+      'title'    => __( 'Footer Area', 'learning26' ),
+      'priority' => 30,
+] );
+
+// Footer 
+
+$wp_customize->add_setting( 'mir_Footer_title', [
+      'default'           => 'Learning WordPress',
+] );
+
 }
 
 
