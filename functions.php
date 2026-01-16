@@ -71,14 +71,14 @@ $wp_customize->add_control(
     ]
 );
 
-$wp_customize->add_setting( 'mir_logo', [
-      'default'           => '',
+$wp_customize->add_setting( 'mir_header_description', [
+      'default'           => 'This is a learning platform',
 ] );
 
 $wp_customize->add_control(
-    'mir_header_title',
+    'mir_header_description',
     [
-        'label'   => __( 'Header Title', 'learning26' ),
+        'label'   => __( 'Header Description', 'learning26' ),
         'section' => 'mir_header_area',
         'type'    => 'text',
     ]
