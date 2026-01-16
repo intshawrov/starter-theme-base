@@ -96,6 +96,15 @@ $wp_customize->add_setting( 'mir_Footer_title', [
       'default'           => 'Learning WordPress',
 ] );
 
+$wp_customize->add_control(
+    'mir_header_description',
+    [
+        'label'   => __( 'Footer Description', 'learning26' ),
+        'section' => 'mir_footer_area',
+        'type'    => 'text',
+    ]
+);
+
 }
 
 
