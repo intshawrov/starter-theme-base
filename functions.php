@@ -71,6 +71,19 @@ $wp_customize->add_control(
     ]
 );
 
+$wp_customize->add_setting( 'mir_logo', [
+      'default'           => '',
+] );
+
+$wp_customize->add_control(
+    'mir_header_title',
+    [
+        'label'   => __( 'Header Title', 'learning26' ),
+        'section' => 'mir_header_area',
+        'type'    => 'text',
+    ]
+);
+
 }
 
 
