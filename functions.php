@@ -105,9 +105,24 @@ $wp_customize->add_control(
     ]
 );
 
-$wp_customize->add_setting( 'mir_Footer_title', [
-      'default'           => 'Learning WordPress',
+
+// Footer Image
+$wp_customize->add_setting( 'footer_logo', [
+      'default'           => '',
+      'sanitize_callback' => 'esc_url_raw',
 ] );
+
+$wp_customize->add_control(
+      new WP_Customize_Image_Control(
+      $wp_customize,
+      'mir_logo',
+      [
+            'label'    => __( 'Upload Logo', 'learning26' ),
+            'section'  => 'mir_header_area',
+            'settings' => 'mir_logo',
+      ]
+      )
+);
 
 }
 
