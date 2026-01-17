@@ -105,6 +105,10 @@ $wp_customize->add_control(
     ]
 );
 
+$wp_customize->add_setting( 'mir_Footer_title', [
+      'default'           => 'Learning WordPress',
+] );
+
 }
 
 
