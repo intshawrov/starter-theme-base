@@ -124,6 +124,13 @@ $wp_customize->add_control(
       )
 );
 
+// Body Image
+
+$wp_customize-> add_setting( 'body_image', [
+      'default'=> '',
+      'sanitize_callback'     => 'ese_url_raw',
+]);
+
 }
 
 
