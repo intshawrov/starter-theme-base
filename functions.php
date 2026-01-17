@@ -115,11 +115,11 @@ $wp_customize->add_setting( 'footer_logo', [
 $wp_customize->add_control(
       new WP_Customize_Image_Control(
       $wp_customize,
-      'mir_logo',
+      'footer_logo',
       [
             'label'    => __( 'Upload Logo', 'learning26' ),
-            'section'  => 'mir_header_area',
-            'settings' => 'mir_logo',
+            'section'  => 'mir_footer_area',
+            'settings' => 'footer_logo',
       ]
       )
 );
