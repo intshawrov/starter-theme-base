@@ -126,10 +126,27 @@ $wp_customize->add_control(
 
 // Body Image
 
+$wp_customize->add_section( 'mir_body_area', [
+      'title'    => __( 'Body Area', 'learning26' ),
+      'priority' => 30,
+] );
+
 $wp_customize-> add_setting( 'body_image', [
       'default'=> '',
       'sanitize_callback'     => 'ese_url_raw',
 ]);
+
+$wp_customize->add_control(
+      new WP_Customize_Image_Control(
+      $wp_customize,
+      'body_image',
+      [
+            'label'    => __( 'Upload Logo', 'learning26' ),
+            'section'  => 'mir_body_area',
+            'settings' => 'body_image',
+      ]
+      )
+);
 
 }
 
