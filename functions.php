@@ -152,6 +152,17 @@ $wp_customize-> add_setting( 'body_title', [
       'sanitize_callback'     => 'ese_url_raw',
 ]);
 
+$wp_customize->add_control(
+    'mir_body_area',
+    [
+        'label'   => __( 'Body Title', 'learning26' ),
+        'section' => 'mir_footer_area',
+        'type'    => 'text',
+    ]
+);
+
+
+
 }
 
 
