@@ -6,6 +6,7 @@
             <div class="col-md-12"><h1>Title</h1></div>
             <?php if( get_theme_mod('body_image')): ?>
             <div class="col-md-12"><img src="<?php echo esc_url( get_theme_mod('body_image') ); ?>" alt=""></div>
+            <?php endif; ?>
       </div>
 </div>
 

@@ -147,6 +147,10 @@ $wp_customize->add_control(
       ]
       )
 );
+$wp_customize->add_section( 'mir_body_area', [
+      'title'    => __( 'Body Area', 'learning26' ),
+      'priority' => 30,
+] );
 
 }
 
